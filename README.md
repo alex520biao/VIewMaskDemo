@@ -15,4 +15,7 @@ VIewMaskDemo
             [dict setValue:[NSNumber numberWithBool:NO] forKey:@"CMTabBarController"];   
       }
 
+```javascript
+var editor = new EpicEditor().load();
+```
 
