@@ -21,6 +21,8 @@
 		E1A8497F18167B97003AF515 /* UIView+Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A8497E18167B97003AF515 /* UIView+Mark.m */; };
 		E1A8498118167BCD003AF515 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A8498018167BCD003AF515 /* QuartzCore.framework */; };
 		E1B34861181FC81100971C0B /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B34860181FC81100971C0B /* CustomView.m */; };
+		E1B34864181FD2C900971C0B /* CustomView1.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B34863181FD2C900971C0B /* CustomView1.m */; };
+		E1B34867181FD2D900971C0B /* CustomView2.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B34866181FD2D900971C0B /* CustomView2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,10 @@
 		E1A8498018167BCD003AF515 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E1B3485F181FC81100971C0B /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		E1B34860181FC81100971C0B /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		E1B34862181FD2C900971C0B /* CustomView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView1.h; sourceTree = "<group>"; };
+		E1B34863181FD2C900971C0B /* CustomView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView1.m; sourceTree = "<group>"; };
+		E1B34865181FD2D900971C0B /* CustomView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView2.h; sourceTree = "<group>"; };
+		E1B34866181FD2D900971C0B /* CustomView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,10 @@
 				E1A8497518167B5F003AF515 /* ViewController.xib */,
 				E1B3485F181FC81100971C0B /* CustomView.h */,
 				E1B34860181FC81100971C0B /* CustomView.m */,
+				E1B34862181FD2C900971C0B /* CustomView1.h */,
+				E1B34863181FD2C900971C0B /* CustomView1.m */,
+				E1B34865181FD2D900971C0B /* CustomView2.h */,
+				E1B34866181FD2D900971C0B /* CustomView2.m */,
 				E1A8496118167B5E003AF515 /* Supporting Files */,
 			);
 			path = VIewMaskDemo;
@@ -189,9 +199,11 @@
 			files = (
 				E1B34861181FC81100971C0B /* CustomView.m in Sources */,
 				E1A8496718167B5E003AF515 /* main.m in Sources */,
+				E1B34867181FD2D900971C0B /* CustomView2.m in Sources */,
 				E1A8496B18167B5E003AF515 /* AppDelegate.m in Sources */,
 				E1A8497418167B5E003AF515 /* ViewController.m in Sources */,
 				E1A8497F18167B97003AF515 /* UIView+Mark.m in Sources */,
+				E1B34864181FD2C900971C0B /* CustomView1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

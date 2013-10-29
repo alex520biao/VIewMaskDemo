@@ -179,6 +179,8 @@
 //    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"SearchHistroyView"];//未使用
     
     [dict setValue:[NSNumber numberWithBool:YES] forKey:@"CustomView"];
+    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"CustomView1"];
+    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"CustomView2"];
 }
 
 #pragma mark 重写父类方法
