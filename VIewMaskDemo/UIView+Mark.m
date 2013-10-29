@@ -39,128 +39,9 @@
 }
 
 -(void)displayMask{
-    //展示筛选
+    //配置展示的类名
     NSMutableDictionary *dict=[[NSMutableDictionary alloc] init];
-    //标签栏控制器CMTabBarController
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"CMTabBarController"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"CMTabBar"];
-    
-    //HomeRecommendViewController
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"HomeRecommendViewController"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"HomeRecommendCell"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"HomeRecommendItemView"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"CarouselViewController"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"CarouselVideoIntroView"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"CarouselPageControl"];
-    
-    //MovieViewController
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"MovieTableController"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"MovieTableCell"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"MovieViewController"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"MovieViewCell"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"YBMovieViewController"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"BVGridViewColumn"];
-    //SortView
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SortView"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SortStyleTopBar"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SortSectionView"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SortStyleTopBar"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SortSectionBar"];
-    //RankingViewController
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"RankingViewController"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"RankingView"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"RankingSectionTopBar"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"RankingItemView"];
-    
-    //Detail 视频详细模块
-    //综艺视频详细页面
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"VideoDetailView"];
-    //headerView（标题栏）、seasonTabView（季部选择）、topView（包含视频基本信息、播放源选择）
-    //entertainmentListView（综艺列表视图，综艺特有）、tVSeriesView（剧集键盘、连续剧和动漫特有）、storyDetailView（剧情视图）、footerView（底栏），根据视频的类型，进行组合。
-    
-    //entertainmentListView（综艺列表视图）
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"EntertainmentListView"];
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"EntertainmentCell"];
-    
-    //动漫、电视剧等第几部或第几季(美剧、动漫等)，如美剧“破产姐妹 第一季 第二季 第三季。爱情公寓 第一部、第二部、第三部等”
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"SeasonTabView"];//第几部
-    
-    //综艺等节目的月份选择列表，如“1月、2月、三月、四月等”
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"SliderTabView"];//月份选择视图
-    
-    //连续剧等选集视图
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"TVSeriesView"];//选集视图
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"TVSeriesKeyoardBarView"];//如1~20，21~40
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"KeyboardView"];//如第~集
-    
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"BVSimilarRecommandView"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"BVBdhdRecommandView"];
-    
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"PlaySourceView"];
-    
-    //UserSetting
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"UserViewController"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SwitchView"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SwitchButton"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"TopBarView"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"UserContentView"];//未使用
-    
-    //EncourageView(提示评论)
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"EncourageView"];
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"EncourageTipView"];
-    //关于
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"AboutView"];
-    //收藏
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"FavouriteView"];
-    //功能设置
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"FunctionSettingView"];
-    //意见反馈
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"AdviseView"];
-    //应用推荐
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"AppRecommendView"];//(UIWebView展示数据)
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"ApplicationItemView"];//未使用
-    //版本更新视图
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"VersionUpdateView"];
-    //修改密码
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"BDCastPwdChangeViewController"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"BDCastPwdChangeView"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SpaceTextField"];
-    //播放记录
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"HistoryTableController"];
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"HistoryTableCell"];
-    
-    //DownloadManager
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"DownloadManagerViewController"];
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"DownloadCell"];
-    
-    //Common
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"EditBVGridViewColumn"];
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"EditMovieViewCell"];
-    
-    //未使用
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"VideoItemListView"];
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"VideoItemView"];
-    
-    //UI/Browser 浏览器模块
-    
-    //UI/Search 搜索模块
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SearchViewController"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"HotKeyView"];//搜索关键字
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"VideoDetailListView"];
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"CategorySwitchView"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SearchResultView"];
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"SearchBarView"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"DropdownListView"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"RSGridViewColumn"];
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"SearchResultCell"];
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"GTPCell"];//搜索结果单个方形格
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"UFPCell"];
-    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"HotkeySearchHistoryContainerView"];//未使用
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"SearchHistroyView"];//未使用
-    
-    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"ViewController"];
-    
-    //UI/CoverStory 封面故事
+    [self updateViewDict:dict];
     
     //self为UIView及其子类对象
     if ([self isKindOfClass:[UIView class]]) {
@@ -177,6 +58,127 @@
             [(UIViewController*)self.nextResponder mark];
         }
     }
+}
+
+-(void)updateViewDict:(NSMutableDictionary*)dict{
+//    //标签栏控制器CMTabBarController
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"CMTabBarController"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"CMTabBar"];
+//    
+//    //HomeRecommendViewController
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"HomeRecommendViewController"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"HomeRecommendCell"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"HomeRecommendItemView"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"CarouselViewController"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"CarouselVideoIntroView"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"CarouselPageControl"];
+//    
+//    //MovieViewController
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"MovieTableController"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"MovieTableCell"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"MovieViewController"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"MovieViewCell"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"YBMovieViewController"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"BVGridViewColumn"];
+//    //SortView
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SortView"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SortStyleTopBar"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SortSectionView"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SortStyleTopBar"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SortSectionBar"];
+//    //RankingViewController
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"RankingViewController"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"RankingView"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"RankingSectionTopBar"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"RankingItemView"];
+//    
+//    //Detail 视频详细模块
+//    //综艺视频详细页面
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"VideoDetailView"];
+//    //headerView（标题栏）、seasonTabView（季部选择）、topView（包含视频基本信息、播放源选择）
+//    //entertainmentListView（综艺列表视图，综艺特有）、tVSeriesView（剧集键盘、连续剧和动漫特有）、storyDetailView（剧情视图）、footerView（底栏），根据视频的类型，进行组合。
+//    
+//    //entertainmentListView（综艺列表视图）
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"EntertainmentListView"];
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"EntertainmentCell"];
+//    
+//    //动漫、电视剧等第几部或第几季(美剧、动漫等)，如美剧“破产姐妹 第一季 第二季 第三季。爱情公寓 第一部、第二部、第三部等”
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"SeasonTabView"];//第几部
+//    
+//    //综艺等节目的月份选择列表，如“1月、2月、三月、四月等”
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"SliderTabView"];//月份选择视图
+//    
+//    //连续剧等选集视图
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"TVSeriesView"];//选集视图
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"TVSeriesKeyoardBarView"];//如1~20，21~40
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"KeyboardView"];//如第~集
+//    
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"BVSimilarRecommandView"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"BVBdhdRecommandView"];
+//    
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"PlaySourceView"];
+//    
+//    //UserSetting
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"UserViewController"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SwitchView"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SwitchButton"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"TopBarView"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"UserContentView"];//未使用
+//    
+//    //EncourageView(提示评论)
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"EncourageView"];
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"EncourageTipView"];
+//    //关于
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"AboutView"];
+//    //收藏
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"FavouriteView"];
+//    //功能设置
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"FunctionSettingView"];
+//    //意见反馈
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"AdviseView"];
+//    //应用推荐
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"AppRecommendView"];//(UIWebView展示数据)
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"ApplicationItemView"];//未使用
+//    //版本更新视图
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"VersionUpdateView"];
+//    //修改密码
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"BDCastPwdChangeViewController"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"BDCastPwdChangeView"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SpaceTextField"];
+//    //播放记录
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"HistoryTableController"];
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"HistoryTableCell"];
+//    
+//    //DownloadManager
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"DownloadManagerViewController"];
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"DownloadCell"];
+//    
+//    //Common
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"EditBVGridViewColumn"];
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"EditMovieViewCell"];
+//    
+//    //未使用
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"VideoItemListView"];
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"VideoItemView"];
+//    
+//    //UI/Browser 浏览器模块
+//    
+//    //UI/Search 搜索模块
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SearchViewController"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"HotKeyView"];//搜索关键字
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"VideoDetailListView"];
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"CategorySwitchView"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"SearchResultView"];
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"SearchBarView"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"DropdownListView"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"RSGridViewColumn"];
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"SearchResultCell"];
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"GTPCell"];//搜索结果单个方形格
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"UFPCell"];
+//    [dict setValue:[NSNumber numberWithBool:NO] forKey:@"HotkeySearchHistoryContainerView"];//未使用
+//    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"SearchHistroyView"];//未使用
+    
+    [dict setValue:[NSNumber numberWithBool:YES] forKey:@"CustomView"];
 }
 
 #pragma mark 重写父类方法

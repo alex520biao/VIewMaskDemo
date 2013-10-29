@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "CustomView.h"
 @interface ViewController ()
 
 @end
@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    CustomView *cusotmView=[[CustomView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [self.view addSubview:cusotmView];
 }
 
 - (void)didReceiveMemoryWarning
